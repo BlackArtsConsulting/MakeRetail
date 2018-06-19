@@ -1,0 +1,39 @@
+{
+  "function": "MakeRetail.makeRetail",
+  "runtime": "python3.6",
+  "parameters":{
+    "fixTypes": {
+      "description": "Fixture types.",
+      "max": 4,
+      "min": 0,
+      "step": 1,
+      "type": "number"    
+    },
+    "fixColor": {
+      "description": "Fixture color.",
+      "max": 11,
+      "min": 0,
+      "step": 1,
+      "type": "number"    
+    },
+    "flrColor": {
+      "description": "Floor color.",
+      "max": 11,
+      "min": 0,
+      "step": 1,
+      "type": "number"    
+    },    
+    "rotation": {
+      "description": "Fixture rotation.",
+      "max": 350,
+      "min": 0,
+      "step": 50,
+      "type": "number"    
+    }
+  },
+  "returns": {
+    "items": {
+      "description": "Total number of items."
+    }
+  }
+}
