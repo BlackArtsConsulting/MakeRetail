@@ -12,17 +12,17 @@ spacer = aecSpacer()
 shaper = aecShaper()
 
 model = glTF()
-colorAqua = model.add_material(0.0, 0.631, 0.945, 0.9, 0.8, "Aqua")
+colorAqua = model.add_material(0.3, 0.72, 0.392, 1.0, 0.8, "Aqua")
 colorBlue = model.add_material(0.0, 0.631, 0.945, 1.0, 0.8, "Blue")
 colorBrown = model.add_material(0.5, 0.2, 0.0, 1.0, 0.5, "Brown")
 colorGray = model.add_material(0.5, 0.5, 0.5, 1.0, 0.8, "Gray")
-colorGranite = model.add_material(0.25, 0.25, 0.25, 0.9, 0.8, "Granite")
+colorGranite = model.add_material(0.25, 0.25, 0.25, 1.0, 0.8, "Granite")
 colorGreen = model.add_material(0.486, 0.733, 0.0, 1.0, 0.8, "Green")
 colorOrange = model.add_material(0.964, 0.325, 0.078, 1.0, 0.8, "Orange")
 colorPurple = model.add_material(0.75, 0.07, 1.0, 1.0, 0.8, "Purple")
 colorSand = model.add_material(1.0, 0.843, 0.376, 1.0, 0.8, "Sand") 
 colorSilver = model.add_material(0.75, 0.75, 0.75, 1.0, 1.0, "Silver")
-colorWhite = model.add_material(1.0, 1.0, 1.0, 0.5, 0.8, "White")
+colorWhite = model.add_material(1.0, 1.0, 1.0, 1.0, 0.8, "White")
 colorYellow = model.add_material(1.0, 0.733, 0.0, 1.0, 0.8, "Yellow")
 
 def getColor(color: int = 0):
@@ -232,7 +232,7 @@ def makeRetail(fixTypes: int = 0, fixColor: int = 1, flrColor: int = 0, rotation
         x = 0
         y += 1   
     return {"model": model.save_base64(), 'computed':{'Total items':items}}   
-#    model.save_glb('C:\\Users\\aahau\\Dropbox\\Business\\BlackArts\\Development\\GitHub\\MakeRetail\\model.glb')
+#    model.save_glb('C:\\Users\\Anthony\\Dropbox\\Business\\BlackArts\\Development\\GitHub\\MakeRetail\\model.glb')
 #
 #makeRetail(fixTypes = randint(0, 4), 
 #           fixColor = randint(0, 11), 
