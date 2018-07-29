@@ -232,7 +232,7 @@ def makeRetail(fixTypes: int = 0, fixColor: int = 1, flrColor: int = 0, rotation
         x = 0
         y += 1   
     return {"model": model.save_base64(), 'computed':{'Total items':items}}   
-#    model.save_glb('C:\\Users\\Anthony\\Dropbox\\Business\\BlackArts\\Development\\GitHub\\MakeRetail\\model.glb')
+#    model.save_glb('model.glb')
 #
 #makeRetail(fixTypes = randint(0, 4), 
 #           fixColor = randint(0, 11), 
